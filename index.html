@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinaria Bremen — Los Ángeles, Chile</title>
+  <meta name="description" content="Clínica Veterinaria Bremen, Los Ángeles. Salud para pequeños animales desde 1994. Cirugía, hospitalización, farmacia, peluquería y traslado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between gap-2">
+        <a href="index.html" class="d-flex align-items-center text-decoration-none">
+          <div class="brand-icon">🐾</div>
+          <div class="navbar-brand-text">
+            Clínica Bremen
+            <span>Los Ángeles, Chile</span>
+          </div>
+        </a>
+        <button class="border-0 bg-transparent d-lg-none" id="navToggle" aria-label="Menú">
+          <span style="font-size:1.5rem; color: var(--azul-oscuro);">☰</span>
+        </button>
+        <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+          <a href="#inicio"    class="nav-link active">Inicio</a>
+          <a href="#servicios" class="nav-link">Servicios</a>
+          <a href="#nosotros"  class="nav-link">Nosotros</a>
+          <a href="#horarios"  class="nav-link">Horarios</a>
+          <a href="#contacto"  class="nav-link">Contacto</a>
+          <a href="tel:+56994197143" class="nav-link btn-emergencia ms-2">
+            <i class="fas fa-phone-alt"></i> Emergencias
+          </a>
+        </div>
+      </div>
+      <div class="d-lg-none d-none mt-2 pb-2 border-top" id="mobileMenu">
+        <div class="d-flex flex-column gap-1 pt-2">
+          <a href="#inicio"    class="nav-link" onclick="closeMobile()">Inicio</a>
+          <a href="#servicios" class="nav-link" onclick="closeMobile()">Servicios</a>
+          <a href="#nosotros"  class="nav-link" onclick="closeMobile()">Nosotros</a>
+          <a href="#horarios"  class="nav-link" onclick="closeMobile()">Horarios</a>
+          <a href="#contacto"  class="nav-link" onclick="closeMobile()">Contacto</a>
+          <a href="tel:+56994197143" class="nav-link btn-emergencia mt-1 text-center">
+            <i class="fas fa-phone-alt"></i> Emergencias: 09-94197143
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="fas fa-star" style="font-size:0.65rem;"></i>
+            Atendiendo desde 1994
+          </div>
+          <h1 class="hero-titulo">
+            Salud y cuidado para los animales que <em>más quieres</em>
+          </h1>
+          <p class="hero-subtitulo">
+            Clínica veterinaria familiar en Los Ángeles, comprometida con
+            la salud y el bienestar de las mascotas durante más de 30 años.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contacto" class="btn-primario">
+              <i class="fas fa-envelope"></i> Contáctanos
+            </a>
+            <a href="#servicios" class="btn-secundario">
+              <i class="fas fa-paw"></i> Ver servicios
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-img-wrapper">
+            <img src="assets/img/roscoe.jpg"
+                 alt="Mascota atendida en Clínica Bremen" loading="eager">
+            <div class="hero-img-badge">
+              <div class="num">30+</div>
+              <div class="lbl">años de<br>experiencia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Descubrir</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- FRANJA CONTACTO -->
+  <div class="franja-contacto">
+    <div class="container">
+      <div class="row g-2 justify-content-center text-center text-md-start">
+        <div class="col-12 col-md-auto">
+          <div class="item justify-content-center">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>San Martín #557, Los Ángeles</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-auto">
+          <div class="item justify-content-center">
+            <i class="fas fa-phone"></i>
+            <a href="tel:432318373">432-318373 / 432-630736</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-auto">
+          <div class="item justify-content-center">
+            <i class="fas fa-clock"></i>
+            <span>Lun–Vie: 09:15–13:00 / 15:15–20:00 &nbsp;|&nbsp; Sáb: 09:30–12:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" style="padding: 5rem 0; background: var(--gris-claro);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="seccion-titulo centrado">Nuestros Servicios</h2>
+        <p class="seccion-subtitulo mx-auto mt-3">
+          Atención integral para pequeños animales, con el respaldo
+          de más de 30 años de experiencia veterinaria.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="cirugia.html" class="service-card">
+            <div class="service-icon"><i class="fas fa-scalpel"></i></div>
+            <h4>Cirugía Veterinaria</h4>
+            <p>Intervenciones electivas, no electivas y de emergencia. Especialistas en osteosíntesis para fracturas.</p>
+            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="hospitalizacion.html" class="service-card">
+            <div class="service-icon"><i class="fas fa-hospital"></i></div>
+            <h4>Hospitalización</h4>
+            <p>Supervisión médica constante, tratamientos intensivos y ambientes con temperatura controlada.</p>
+            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="farmacia.html" class="service-card">
+            <div class="service-icon"><i class="fas fa-pills"></i></div>
+            <h4>Farmacia Veterinaria</h4>
+            <p>Medicamentos, suplementos, Hill's Prescription Diet y antiparasitarios. Pedidos en ~2 días hábiles.</p>
+            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="peluqueria.html" class="service-card">
+            <div class="service-icon"><i class="fas fa-cut"></i></div>
+            <h4>Peluquería de Mascotas</h4>
+            <p>Baños, cortes y estética para perros, gatos y más. Plan "Club de Belleza" con hasta 50% de descuento.</p>
+            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="traslado.html" class="service-card">
+            <div class="service-icon"><i class="fas fa-car"></i></div>
+            <h4>Traslado a Domicilio</h4>
+            <p>Retiro y entrega sin costo adicional dentro del radio urbano de Los Ángeles.</p>
+            <span class="service-link">Ver más <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="col-sm-6 col-lg-4 fade-in">
+          <a href="#contacto" class="service-card">
+            <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+            <h4>Consulta General</h4>
+            <p>Diagnóstico, prevención y seguimiento. Asociados a MEVEPA y la Asociación Mundial de Veterinarios.</p>
+            <span class="service-link">Agendar <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" style="padding: 5rem 0; background: white;">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 fade-in">
+          <div class="nosotros-img">
+            <img src="assets/img/gatacasa1.jpg" alt="Mascota en Clínica Bremen">
+            <div class="nosotros-img-badge">
+              <div class="big">1994</div>
+              <div class="small">Fundación</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 fade-in">
+          <h2 class="seccion-titulo">Nuestra Historia</h2>
+          <p class="mt-3" style="color: var(--gris-texto);">
+            Clínica Veterinaria Bremen nació en 1994, fundada por el Dr. Günter Wilckens
+            y la Dra. Ingrid Buchheister. El nombre rinde homenaje a sus ancestros alemanes
+            de Bremen, inmortalizada en el cuento de los Hermanos Grimm
+            <em>"Los Músicos de Bremen"</em>.
+          </p>
+          <p style="color: var(--gris-texto);">
+            Somos miembros de <strong>MEVEPA</strong> y de la
+            <strong>Asociación Mundial de Veterinarios de Pequeños Animales</strong>,
+            garantizando actualización constante y respaldo científico internacional.
+          </p>
+          <ul class="valores-list mt-3">
+            <li><i class="fas fa-check-circle"></i><span><strong>Ética intachable</strong> en cada acto médico</span></li>
+            <li><i class="fas fa-check-circle"></i><span><strong>Servicio personalizado</strong> para cada mascota</span></li>
+            <li><i class="fas fa-check-circle"></i><span><strong>Conciencia ecológica</strong> y respeto por la naturaleza</span></li>
+            <li><i class="fas fa-check-circle"></i><span><strong>Perfeccionamiento constante</strong> a través de capacitación</span></li>
+            <li><i class="fas fa-check-circle"></i><span><strong>Labor educativa</strong> sobre enfermedades zoonóticas</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section id="horarios" style="padding: 4rem 0; background: var(--azul-oscuro); color: white;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="seccion-titulo centrado" style="color: white;">Horarios de Atención</h2>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-5 col-lg-4 fade-in">
+          <div class="horario-card">
+            <h5><i class="fas fa-calendar-alt me-2"></i>Atención regular</h5>
+            <div class="horario-item"><span class="dia">Lun – Vie (mañana)</span><span class="hora">09:15 – 13:00</span></div>
+            <div class="horario-item"><span class="dia">Lun – Vie (tarde)</span><span class="hora">15:15 – 20:00</span></div>
+            <div class="horario-item"><span class="dia">Sábado</span><span class="hora">09:30 – 12:00</span></div>
+            <div class="horario-item"><span class="dia">Domingo</span><span class="hora" style="color:rgba(255,255,255,0.35);">Cerrado</span></div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 fade-in">
+          <div class="horario-card">
+            <h5><i class="fas fa-phone me-2"></i>Contacto</h5>
+            <div class="horario-item"><span class="dia">Teléfono</span><span class="hora"><a href="tel:432318373" style="color:white;">432-318373</a></span></div>
+            <div class="horario-item"><span class="dia">Teléfono</span><span class="hora"><a href="tel:432630736" style="color:white;">432-630736</a></span></div>
+            <div class="horario-item"><span class="dia">Dirección</span><span class="hora" style="font-size:0.8rem;">San Martín #557</span></div>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-4 fade-in">
+          <div class="emergencia-box">
+            <i class="fas fa-heartbeat"></i>
+            <div class="label">Fono Emergencias</div>
+            <div class="numero"><a href="tel:+56994197143">09-94197143</a></div>
+            <div style="font-size:0.75rem; opacity:0.78; margin-top:0.4rem;">Disponible 24 horas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" style="padding: 5rem 0; background: var(--gris-claro);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="seccion-titulo centrado">Contáctenos</h2>
+        <p class="seccion-subtitulo mx-auto mt-3">Envíenos su consulta. Responderemos a la brevedad.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6 fade-in">
+          <form action="https://formsubmit.co/CORREO_AQUI@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Consulta desde sitio web — Clínica Bremen">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Su nombre" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="su@email.com" required>
+              </div>
+              <div class="col-12">
+                <label for="destino">Destino de consulta</label>
+                <select id="destino" name="destino" class="form-select">
+                  <option value="contacto">Información General</option>
+                  <option value="ventas">Ventas o Cotizaciones</option>
+                  <option value="gwilckens">Doctor Wilckens</option>
+                  <option value="ibuchheister">Doctora Buchheister</option>
+                  <option value="peluqueria">Peluquería</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" class="form-control" placeholder="¿En qué podemos ayudarle?" required>
+              </div>
+              <div class="col-12">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="5"
+                          placeholder="Cuéntenos sobre su mascota y su consulta..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-enviar">
+                  <i class="fas fa-paper-plane me-2"></i> Enviar mensaje
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 fade-in">
+          <div class="mapa-wrapper mb-4">
+            <iframe src="https://maps.google.cl/maps?f=q&source=s_q&hl=es&q=Clinica+Bremen,+Los+Angeles,+Chile&t=m&ll=-37.47932,-72.353683&z=15&output=embed"
+                    allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="datos-contacto">
+            <div class="item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><strong>Dirección</strong><br>San Martín #557, Los Ángeles, Región del Biobío</div>
+            </div>
+            <div class="item">
+              <i class="fas fa-phone"></i>
+              <div><strong>Teléfonos</strong><br>
+                <a href="tel:432318373">432-318373</a> / <a href="tel:432630736">432-630736</a></div>
+            </div>
+            <div class="item">
+              <i class="fas fa-ambulance"></i>
+              <div><strong>Emergencias 24h</strong><br>
+                <a href="tel:+56994197143" style="color:var(--rojo);font-weight:700;">09-94197143</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <div class="brand">🐾 Clínica Veterinaria Bremen</div>
+          <div>Salud para pequeños animales — Los Ángeles, Chile</div>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <div>Asociados a <strong style="color:rgba(255,255,255,0.7);">MEVEPA</strong></div>
+          <div class="mt-1">© <span id="anio"></span> Clínica Veterinaria Bremen.</div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="text-center" style="font-size:0.76rem;">
+        Dra. Ingrid Buchheister &amp; Dr. Günter Wilckens — Médicos Veterinarios
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/shared.js"></script>
+</body>
+</html>
